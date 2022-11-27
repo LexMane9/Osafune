@@ -301,24 +301,24 @@ public class OCG extends Game implements Screen {
                 return false;
 
             //Eleccion de clase
-            if (selectJugador.getSelected() == clase1)
+            if (selectJugador.getSelected().equals("Jugador: "+clase1))
                 claseJugador = 1;
-            if (selectJugador.getSelected() == clase2)
+            if (selectJugador.getSelected().equals("Jugador: "+ clase2+"   "))
                 claseJugador = 2;
-            if (selectJugador.getSelected() == clase3)
+            if (selectJugador.getSelected().equals("Jugador: "+ clase3));
                 claseJugador = 3;
-            if (selectJugador.getSelected() == claseRandom) {
+            if (selectJugador.getSelected().equals("Jugador: "+ claseRandom)) {
                 int random = (int) Math.floor(1 + Math.random() * 3);
                 claseJugador = random;
             }
 
-            if (selectOponente.getSelected() == clase1)
+            if (selectOponente.getSelected().equals("Oponente: "+clase1))
                 claseOponente = 1;
-            if (selectOponente.getSelected() == clase2)
+            if (selectOponente.getSelected().equals("Oponente: "+clase2+"    "))
                 claseOponente = 2;
-            if (selectOponente.getSelected() == clase3)
+            if (selectOponente.getSelected().equals("Oponente: "+clase3))
                 claseOponente = 3;
-            if (selectOponente.getSelected() == claseRandom) {
+            if (selectOponente.getSelected().equals("Oponente: "+claseRandom)) {
                 int random = (int) Math.floor(1 + Math.random() * 3);
                 claseOponente = random;
             }
