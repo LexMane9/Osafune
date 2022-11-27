@@ -1,0 +1,17 @@
+{
+"characters": "",
+"size": 32,
+"hinting": "AutoFull",
+"color": "text",
+"colorValue": -1,
+"gamma": 1.8,
+"renderCount": 2,
+"borderWidth": 4,
+"borderColor": "selected",
+"borderColorValue": 1744848127,
+"borderGamma": 1.8,
+"spaceX": -2,
+"kerning": true,
+"minFilter": "Nearest",
+"magFilter": "Nearest"
+}
