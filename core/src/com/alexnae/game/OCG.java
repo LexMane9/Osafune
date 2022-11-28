@@ -305,7 +305,7 @@ public class OCG extends Game implements Screen {
                 claseJugador = 1;
             if (selectJugador.getSelected().equals("Jugador: "+ clase2+"   "))
                 claseJugador = 2;
-            if (selectJugador.getSelected().equals("Jugador: "+ clase3));
+            if (selectJugador.getSelected().equals("Jugador: "+ clase3))
                 claseJugador = 3;
             if (selectJugador.getSelected().equals("Jugador: "+ claseRandom)) {
                 int random = (int) Math.floor(1 + Math.random() * 3);
@@ -995,7 +995,8 @@ public class OCG extends Game implements Screen {
     private void crearZonasMonstruoOp() {
         for (int j = 0; j < 5; j++) {
 
-            zonaE1 = new Zona(Gdx.graphics.getWidth() / 5 + 150 + (Gdx.graphics.getWidth() / 7 * j), (Gdx.graphics.getHeight() / 1.8f), mainStage, j, j);
+            zonaE1 = new Zona(Gdx.graphics.getWidth() / 5 + 150 + (Gdx.graphics.getWidth() / 7 * j),
+                    (Gdx.graphics.getHeight() / 1.8f), mainStage, j, j);
             zonaE1.setSize(Parametros.anchoCarta + 24, Parametros.altoCarta + 48);
             zonaE1.setBoundaryRectangle();
             zonaE1.setName("zonaE" + (j + 1));
@@ -1008,7 +1009,8 @@ public class OCG extends Game implements Screen {
     private void crearZMAliados() {
         for (int i = 0; i < 5; i++) {
 
-            zona1 = new Zona(Gdx.graphics.getWidth() / 5 + 150 + (Gdx.graphics.getWidth() / 7 * i), (Gdx.graphics.getHeight() / 7), mainStage, i, i);
+            zona1 = new Zona(Gdx.graphics.getWidth() / 5 + 150 + (Gdx.graphics.getWidth() / 7 * i),
+                    (Gdx.graphics.getHeight() / 7), mainStage, i, i);
             zona1.loadTexture("dorsoRojo.png");
             zona1.setSize(Parametros.anchoCarta + 24, Parametros.altoCarta + 48);
             zona1.setAliado(true);
